@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MainMasterPage.master" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainContent" Runat="Server">
+    <table style="width:1200px">        <br /><br />
+
+        <tr>
+            <td style="width:300px; padding:10px" colspan="2" align="center">
+                <asp:HyperLink runat="server" ID="hy1" NavigateUrl="~/AddNew.aspx"
+                Text="Add New Book"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/editCateqory.aspx"
+                Text="Edit Book Cateqory"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink runat="server" ID="HyperLink5" NavigateUrl="~/editBook.aspx"
+                Text="Edit Book Brand"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/editLanguage.aspx"
+                Text="Edit Languages"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink runat="server" ID="HyperLink3" NavigateUrl="~/editImage.aspx"
+                Text="Edit Images"></asp:HyperLink>
+               
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:10px; vertical-align:top">
+        
+        <br /><br />
+
+        <b>Popular Subjects<br /><br /><br /><br />Fiction<br /><br /><br /><br />Non-Fiction</b>
+
+            </td>
+        
+        <td style="width:900px; padding:10px; vertical-align:top" colspan="2">
+            <asp:ContentPlaceHolder runat="server" ID="adminContent"></asp:ContentPlaceHolder>
+        </td>
+            </tr>
+    </table>
+</asp:Content>

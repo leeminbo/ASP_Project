@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+          <asp:ContentPlaceHolder id="head" runat="server">
+          </asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <div class="Backimg">
+         <form id="form1" runat="server">
+            <table >
+                <tr>   
+                    <td style="padding:10px">
+                        <b>hypebooks</b>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Book Store.aspx" Text="Book Store"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Wishlist.aspx" Text="Wishlist"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink runat="server" ID="HyperLink3" NavigateUrl="~/My Collection.aspx" Text="My Collection"></asp:HyperLink> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	                </td>
+                    <td>
+                        <b>Login</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><asp:ContentPlaceHolder runat="server" ID="mainContent"></asp:ContentPlaceHolder> </td>
+                </tr>
+                <tr>
+                    <td><address><marquee direction="left">CopyRight@2022, National Univeristy of Manangent, Final Project ASP </marquee></address></td>
+                </tr>
+            </table>
+        </form>
+            </div>
+    </body>
+</html>
